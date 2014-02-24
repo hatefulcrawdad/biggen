@@ -1,0 +1,8 @@
+// Create toggle from radio input and match class names
+@mixin biggen-toggle($toggle-name:"biggen-toggle", $overlay-class: "biggen-overlay") {
+  &[name="#{$toggle-name}"]:checked {
+    ~ .#{$overlay-class} {
+      display: block;
+    }
+  }
+}

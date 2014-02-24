@@ -1,0 +1,8 @@
+// Apply all hover states
+@mixin biggen-selected {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}

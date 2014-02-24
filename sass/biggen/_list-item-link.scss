@@ -1,0 +1,12 @@
+// Style Biggen list item links
+@mixin biggen-list-item-link() {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 20px;
+  display: inline-block;
+  @include biggen-selected {
+    color: darken(lightblue, 40%);
+  }
+}

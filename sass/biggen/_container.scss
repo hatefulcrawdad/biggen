@@ -1,0 +1,19 @@
+// Create a container for Biggen content
+@mixin biggen-container(
+  $bg1:darken(lightblue, 15%),
+  $bg2:darken(lightblue, 10%),
+  $margin-top: 10%,
+  $width: 50%
+){
+  background-color: $bg1;
+  @if $bg2 {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($bg1), to($bg2));
+    background-image: -webkit-linear-gradient(top, $bg1, $bg2);
+    background-image:    -moz-linear-gradient(top, $bg1, $bg2);
+    background-image:     -ms-linear-gradient(top, $bg1, $bg2);
+    background-image:      -o-linear-gradient(top, $bg1, $bg2);
+  }
+  margin: $margin-top auto 0 auto;
+  width: $width;
+  @include biggen-clearfix;
+}
