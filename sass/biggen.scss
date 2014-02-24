@@ -1,0 +1,50 @@
+// Variable Defaults
+$bg1: lightblue !default;
+$bg2: darken($bg1, 15%) !default;
+
+@mixin vertical-align {
+  position: relative;
+  top: -50%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+// Mixin for creating page overlay that holds content
+@mixin biggen-overlay($bg1:$bg1, $bg2:$bg2) {
+
+  // Apply single background color
+  background-color: $bg1;
+
+  // Apply second background gradient if given
+  @if $bg2 {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($bg1), to($bg2));
+    background-image: -webkit-linear-gradient(top, $bg1, $bg2);
+    background-image:    -moz-linear-gradient(top, $bg1, $bg2);
+    background-image:     -ms-linear-gradient(top, $bg1, $bg2);
+    background-image:      -o-linear-gradient(top, $bg1, $bg2);
+  }
+
+  // Fill up the entire viewport
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// Create a container for Biggen content
+@mixin biggen-container() {
+  background-color: blue;
+  height: 50%;
+  width: 50%;
+  @include vertical-align;
+}
+
+
+// Default Styles
+.biggen-overlay { @include biggen-overlay(); }
+.biggen-container { @include biggen-container(); }
+.biggen-panel ul {
+  margin: 0;
+}
