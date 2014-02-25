@@ -1,3 +1,9 @@
 // Biggen overlay background settings
 $overlay-bg1: darken(lightblue, 15%) !default;
-$overlay-bg2: darken($overlay-bg1, 25%) !default;
+$overlay-bg2: darken(lightblue, 25%) !default;
+
+// Biggen container settings
+$container-bg1: darken(lightblue, 15%) !default;
+$container-bg2: darken(lightblue, 10%) !default;
+$container-margin-top: 10% !default;
+$container-width: 50% !default;

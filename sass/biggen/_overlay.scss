@@ -6,14 +6,22 @@
   $bg1: $overlay-bg1,
   $bg2: $overlay-bg2
 ){
+
   display: none;
-  background-color: $bg1;
-  @if $bg2 {
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($bg1), to($bg2));
-    background-image: -webkit-linear-gradient(top, $bg1, $bg2);
-    background-image:    -moz-linear-gradient(top, $bg1, $bg2);
-    background-image:     -ms-linear-gradient(top, $bg1, $bg2);
-    background-image:      -o-linear-gradient(top, $bg1, $bg2);
-  }
   @include biggen-absolute-fill;
+
+  @if type-of($bg1) == color and type-of($bg2) == color or $bg2 == false {
+    background-color: $bg1;
+
+    @if $bg2 {
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($bg1), to($bg2));
+      background-image: -webkit-linear-gradient(top, $bg1, $bg2);
+      background-image:    -moz-linear-gradient(top, $bg1, $bg2);
+      background-image:     -ms-linear-gradient(top, $bg1, $bg2);
+      background-image:      -o-linear-gradient(top, $bg1, $bg2);
+    }
+  }
+  @else {
+    @warn "Please make sure you define an actual color.";
+  }
 }

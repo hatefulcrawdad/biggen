@@ -1,19 +1,32 @@
 // Create a container for Biggen content
 @mixin biggen-container(
-  $bg1:darken(lightblue, 15%),
-  $bg2:darken(lightblue, 10%),
-  $margin-top: 10%,
-  $width: 50%
+  $bg1: $container-bg1,
+  $bg2: false,
+  $margin-top: $container-margin-top,
+  $width: $container-width
 ){
-  background-color: $bg1;
-  @if $bg2 {
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($bg1), to($bg2));
-    background-image: -webkit-linear-gradient(top, $bg1, $bg2);
-    background-image:    -moz-linear-gradient(top, $bg1, $bg2);
-    background-image:     -ms-linear-gradient(top, $bg1, $bg2);
-    background-image:      -o-linear-gradient(top, $bg1, $bg2);
+
+  @if type-of($bg1) == color and type-of($bg2) == color or $bg2 == false {
+    background-color: $bg1;
+    @if $bg2 {
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($bg1), to($bg2));
+      background-image: -webkit-linear-gradient(top, $bg1, $bg2);
+      background-image:    -moz-linear-gradient(top, $bg1, $bg2);
+      background-image:     -ms-linear-gradient(top, $bg1, $bg2);
+      background-image:      -o-linear-gradient(top, $bg1, $bg2);
+    }
   }
-  margin: $margin-top auto 0 auto;
-  width: $width;
+  @else {
+    @warn "Please make sure you define an actual color.";
+  }
+
+  @if type-of($margin-top) == number and type-of($width) == number {
+    margin: $margin-top auto 0 auto;
+    width: $width;
+  }
+  @else {
+    @warn "Please make sure you define a number.";
+  }
+
   @include biggen-clearfix;
 }
