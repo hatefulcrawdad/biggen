@@ -14,3 +14,4 @@
 // Toggle biggen with a checkbox
 input[name="biggen-toggle"] { @include biggen-toggle-action(); }
 .biggen-open { @include biggen-open-toggle-style(16px, black); }
+.biggen-close { @include biggen-close-toggle-style(16px, black); }

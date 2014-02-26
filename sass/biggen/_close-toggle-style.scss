@@ -1,0 +1,23 @@
+// Create the menu link font-style
+//  - Style the word and unicode icon
+//  - Move unicode icon slightly for alignment
+@mixin biggen-close-toggle-style(
+  $font-size,
+  $font-color,
+  $text-transform: false,
+  $font-weight: normal,
+  $font-style: false
+){
+
+  font-size: $font-size;
+  color: $font-color;
+  text-transform: $text-transform;
+  font-weight: $font-weight;
+  font-style: $font-style;
+
+  span {
+    position: relative;
+    top: -1px;
+    font-size: $font-size + 12px;
+  }
+}
