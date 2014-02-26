@@ -13,9 +13,9 @@
   <body>
 
   <!-- Opens Biggen, repeats inside menu with same name -->
-  <input type="radio" class="biggen-open" id="biggen-open" name="biggen-toggle">
+  <input type="radio" id="biggen-open" name="biggen-toggle">
   <!-- Add this line if you want to have a word next to menu icon -->
-  <label for="biggen-open">Menu</label>
+  <label class="biggen-open" for="biggen-open"><span>&#9776;</span> Menu</label>
 
   <!-- TEMP: Using to make sure ~ selector works -->
   <div></div>
@@ -27,7 +27,7 @@
 
     <!-- Closes Biggen, repeats outside menu with same name -->
     <input type="radio" class="biggen-close" id="biggen-close" name="biggen-toggle">
-    <label for="biggen-close">&times;</label>
+    <label for="biggen-close">&times; Close</label>
 
     <!-- Biggen menu container -->
     <div class="biggen-container">
