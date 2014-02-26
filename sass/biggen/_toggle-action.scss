@@ -1,0 +1,15 @@
+// Create toggle from radio input and match class names
+@mixin biggen-toggle-action(
+  $toggle-name: "biggen-toggle",
+  $overlay-class: "biggen-overlay"
+){
+
+  &[name="#{$toggle-name}"] {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    &:checked ~ .#{$overlay-class} {
+      display: block;
+    }
+  }
+}

@@ -12,4 +12,5 @@
 .biggen-list-item-link { @include biggen-list-item-link(); }
 
 // Toggle biggen with a checkbox
-input { @include biggen-toggle(); }
+input[name="biggen-toggle"] { @include biggen-toggle-action(); }
+.biggen-open { @include biggen-open-toggle(); }
