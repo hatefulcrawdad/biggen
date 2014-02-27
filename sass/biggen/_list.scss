@@ -1,14 +1,17 @@
 // Create Biggen list container
 @mixin biggen-list(
-  $list-count: 2
+  $list-count
 ){
+
   list-style: none;
   margin: 0;
   padding: 20px 0;
+
   @if $list-count == 2 {
     float: left;
     width: 50%;
   }
+
   @else if $list-count == 3 {
     float: left;
     width: 33.3%;

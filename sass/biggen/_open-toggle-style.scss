@@ -4,19 +4,19 @@
 @mixin biggen-open-toggle-style(
   $font-size,
   $font-color,
-  $text-transform: false,
   $font-weight: normal,
-  $font-style: false
+  $font-style: null,
+  $text-transform: null
 ){
 
-  font-size: $font-size;
   color: $font-color;
-  text-transform: $text-transform;
-  font-weight: $font-weight;
+  cursor: pointer;
+  font-size: $font-size;
   font-style: $font-style;
+  font-weight: $font-weight;
+  text-transform: $text-transform;
 
-  span {
-    position: relative;
-    top: -1px;
-  }
+  span { font-size: $font-size + 1px; }
+
+  @include biggen-selected { color: rgba($font-color, .7); }
 }

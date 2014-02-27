@@ -7,11 +7,11 @@
 // Default Styles
 .biggen-overlay { @include biggen-overlay(); }
 .biggen-container { @include biggen-container(); }
-.biggen-list { @include biggen-list(); }
+.biggen-list { @include biggen-list(2); }
 .biggen-list-item { @include biggen-list-item(); }
 .biggen-list-item-link { @include biggen-list-item-link(); }
 
 // Toggle biggen with a checkbox
 input[name="biggen-toggle"] { @include biggen-toggle-action(); }
 .biggen-open { @include biggen-open-toggle-style(16px, black); }
-.biggen-close { @include biggen-close-toggle-style(16px, black); }
+.biggen-close { @include biggen-close-toggle-style(16px, white); }

@@ -3,8 +3,11 @@
   $bg1: $container-bg1,
   $bg2: false,
   $margin-top: $container-margin-top,
+  $padding: $container-padding,
   $width: $container-width
 ){
+
+  position: relative;
 
   @if type-of($bg1) == color and type-of($bg2) == color or $bg2 == false {
     background-color: $bg1;
@@ -20,8 +23,9 @@
     @warn "Please make sure you define an actual color.";
   }
 
-  @if type-of($margin-top) == number and type-of($width) == number {
+  @if type-of($margin-top) == number and type-of($width) == number and type-of($padding) == number {
     margin: $margin-top auto 0 auto;
+    padding: $padding;
     width: $width;
   }
   @else {
