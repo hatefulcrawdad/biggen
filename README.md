@@ -6,7 +6,7 @@ To make your first Biggen menu, you'll need to follow the simple markup structur
 
 _Note: Any class name surrounded by [brackets] means use whatever class you want, just apply the appropriate mixin._
 
-```
+```html
 <!-- Biggen Toggle -->
 <label class="[biggen-toggle]" for="[biggen-toggle]" onclick><span>&#9776;</span> Menu</label>
 <input type="checkbox" id="[biggen-toggle]">
@@ -22,9 +22,19 @@ _Note: Any class name surrounded by [brackets] means use whatever class you want
 </div>
 ```
 
-##### Required Elements #####
 Biggen relies on a handy (:checked trick)[http://css-tricks.com/almanac/selectors/c/checked/] to create the states that we need for the menu. This means that you'll need to pay close attention to how you structure the markup used to create the menu. The order is **always** `<label>` follow by `<input>` followed by `<div class="[overlay]">`.
 
 1. Create an `<label class="[biggen-toggle]" for="[biggen-toggle]">`
 2. Add an `<input type="checkbox" id="[biggen-toggle]">` right below that, with nothing in between. Make sure the id matches the class you used for the label
 3. Add your `<div class="[biggen-overlay]">...</div>` and its contents right after that checkbox, the order is important!
+
+
+#### Build with mixins ####
+After getting your markup defined, it's time to get some styles in place. Biggen only relies on Sass to compile, but feel free to still use Compass, Bourbon or any other library alongside Biggen.
+
+```css
+.biggen-toggle { @include biggen-toggle; }
+.biggen-overlay { @include biggen-overlay; }
+.biggen-container { @include biggen-container; }
+.biggen-list { @include biggen-list; }
+```
