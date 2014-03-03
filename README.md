@@ -1,4 +1,4 @@
-##Biggen: Sass modal menus##
+##Biggen: Sass Modal Menus##
 Create beautiful full-screen modal menus with the ease and customization of Sass.
 
 ### Markup Structure ###
