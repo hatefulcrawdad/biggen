@@ -12,25 +12,13 @@
   </head>
   <body>
 
-  <!-- Opens Biggen, repeats inside menu with same name -->
-  <input type="radio" id="biggen-open" name="biggen-toggle">
-  <!-- Add this line if you want to have a word next to menu icon -->
-  <label class="biggen-open" for="biggen-open"><span>&#9776;</span> Menu</label>
+  <!-- Toggle Biggen -->
+  <label class="biggen-toggle" for="biggen-toggle" onclick><span>&#9776;</span> Menu</label>
+  <input type="checkbox" id="biggen-toggle">
 
-  <!-- TEMP: Using to make sure ~ selector works -->
-  <div></div>
-  <div></div>
-  <div></div>
-
-  <!-- Page overlay for Biggen menu -->
+  <!-- Biggen: controlled by toggle -->
   <div class="biggen-overlay">
-
-    <!-- Biggen menu container -->
     <div class="biggen-container">
-      <!-- Closes Biggen, repeats outside menu with same name -->
-      <input type="radio" id="biggen-close" name="biggen-toggle">
-      <label for="biggen-close" class="biggen-close"><span>&times;</span></label>
-
       <ul class="biggen-list">
         <li class="biggen-list-item"><a class="biggen-list-item-link" href="#">Menu Item 1</a></li>
         <li class="biggen-list-item"><a class="biggen-list-item-link" href="#">Menu Item 4</a></li>
@@ -45,6 +33,9 @@
       </ul>
     </div>
   </div>
+
+  <h1 class="site-name">Biggen</h1>
+  <p class="subhead">Create beautiful full-screen modal menus with the ease and customization of Sass.</p>
 
   </body>
 </html>

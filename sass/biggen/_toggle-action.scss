@@ -4,13 +4,18 @@
   $overlay-class: "biggen-overlay"
 ){
 
-  &[name="#{$toggle-name}"] {
-    position: absolute;
-    left: -9999px;
-    top: -9999px;
+  &.#{$toggle-name} {
+    position: relative;
+    z-index: 999;
 
-    &:checked ~ .#{$overlay-class} {
-      display: block;
+    + ##{$toggle-name} {
+      position: absolute;
+      left: -9999px;
+      top: -9999px;
+
+      &:checked + .#{$overlay-class} {
+        display: block;
+      }
     }
   }
 }

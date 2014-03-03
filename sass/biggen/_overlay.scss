@@ -8,7 +8,8 @@
 ){
 
   display: none;
-  @include biggen-absolute-fill;
+  overflow-x: scroll;
+  @include biggen-fill-container;
 
   @if type-of($bg1) == color and type-of($bg2) == color or $bg2 == false {
     background-color: $bg1;

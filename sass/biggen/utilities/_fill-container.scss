@@ -1,0 +1,11 @@
+// Force element to fill entire container
+@mixin biggen-fill-container(
+  $position: fixed
+){
+
+  position: $position;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
