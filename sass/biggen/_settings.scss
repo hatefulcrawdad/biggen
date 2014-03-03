@@ -2,6 +2,7 @@
 
 $biggen-toggle-font-size: 16px !default;
 $biggen-toggle-font-color: black !default;
+$biggen-toggle-font-color-hover: rgba(black, .7) !default;
 $biggen-toggle-font-weight: normal !default;
 $biggen-toggle-font-style: null !default;
 $biggen-toggle-text-transform: null !default;
@@ -23,7 +24,7 @@ $biggen-container-width: 50% !default;
 $biggen-list-count: 1 !default;
 $biggen-list-font-size: 12px !default;
 $biggen-list-link-color: #fff !default;
-$biggen-list-link-hover-color: darken(lightblue, 40%) !default;
+$biggen-list-link-color-hover: darken(lightblue, 40%) !default;
 $biggen-list-text-decoration: none !default;
 $biggen-list-text-transform: uppercase !default;
 $biggen-list-text-padding: 20px !default;

@@ -1,4 +1,7 @@
 // Apply all hover states
+//
+// - Easily apply :hover, :focus and :active styles to an element
+//
 @mixin biggen-selected {
   &:hover,
   &:focus,

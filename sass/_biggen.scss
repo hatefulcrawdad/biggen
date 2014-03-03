@@ -1,9 +1,7 @@
 // Pull in the parts of Biggen
 @import "biggen/settings";
-@import "biggen/utilities";
-@import "biggen/toggle-action";
-@import "biggen/toggle-style";
+@import "biggen/utilities/utilities";
+@import "biggen/toggle";
 @import "biggen/overlay";
 @import "biggen/container";
 @import "biggen/list";
-@import "biggen/list-item-link";

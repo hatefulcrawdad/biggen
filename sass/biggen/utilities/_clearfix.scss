@@ -1,4 +1,7 @@
-// Clearfix so we don't need Compass
+// Clear Fix
+//
+// - Just so we don't need Compass
+//
 @mixin biggen-clearfix {
   &:before,
   &:after {

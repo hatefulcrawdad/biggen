@@ -1,4 +1,7 @@
 // Force element to fill entire container
+//
+// - $position: Control position property of element
+//
 @mixin biggen-fill-container(
   $position: fixed
 ){

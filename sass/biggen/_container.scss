@@ -1,4 +1,11 @@
 // Create a container for Biggen content
+//
+// - $bg1: Set the background color for container element
+// - $bg2: Default is "false". Creates a linear gradient between $bg1 and $bg2
+// - $margin-top: Control how far away from the top of the page you want your menu to be
+// - $padding: Control padding around the inside of a Biggen menu
+// - $width: Control the non-mobile width of a Biggen menu
+//
 @mixin biggen-container(
   $bg1: $biggen-container-bg1,
   $bg2: $biggen-container-bg2,

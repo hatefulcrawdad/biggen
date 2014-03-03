@@ -5,7 +5,7 @@
 //
 
 // Default Styles
-.biggen-toggle { @include biggen-toggle-style; }
+.biggen-toggle { @include biggen-toggle; }
 .biggen-overlay { @include biggen-overlay; }
 .biggen-container { @include biggen-container; }
-.biggen-list { @include biggen-list(2); }
+.biggen-list { @include biggen-list; }
