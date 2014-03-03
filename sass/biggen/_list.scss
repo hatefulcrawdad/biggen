@@ -1,12 +1,12 @@
 // Create a Biggen list container
 //
-// - $list-count: How many link lists for you have? 1, 2, 3?
-// - $font-size: Control the font-size property of links
-// - $link-color: Control the color for links
-// - $link-color-hover: Set the :hover, :focus and :active color for links
-// - $text-decoration: Defaults to "none". You can control the text-decoration property.
-// - $text-transform: Defaults to "uppercase". You can control the text-transform property of links.
-// - $text-padding: Defaults to "20px". Control the padding around links in the list.
+// - $list-count: Default is `1`. Control how many link lists. 1, 2, 3?
+// - $font-size: Default is `12px`. Control the font-size property of links
+// - $link-color: Default is `#fff`. Control the color for links
+// - $link-color-hover: Default is `darken(lightblue, 40%)`. Set the :hover, :focus and :active color for links
+// - $text-decoration: Default is `none`. You can control the text-decoration property.
+// - $text-transform: Default is `uppercase`. You can control the text-transform property of links.
+// - $text-padding: Default is `20px`. Control the padding around links in the list.
 //
 @mixin biggen-list(
   $list-count: $biggen-list-count,

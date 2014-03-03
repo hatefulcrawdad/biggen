@@ -1,7 +1,7 @@
 // Creating page overlay that holds content
 //
-//  - $bg1: Control default background color for page overlay
-//  - $bg2: Defaults to "false". If true: adds linear gradient between $bg1 and $bg2
+// - $bg1: Default is `darken(lightblue, 25%)`. Control default background color for page overlay
+// - $bg2: Default is `false`. If true: adds linear gradient between $bg1 and $bg2
 //
 @mixin biggen-overlay(
   $bg1: $biggen-overlay-bg1,

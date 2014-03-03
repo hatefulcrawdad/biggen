@@ -1,0 +1,39 @@
+// Apply all hover states
+//
+// - Easily apply :hover, :focus and :active styles to an element
+//
+@mixin biggen-selected {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
+// Force element to fill entire container
+//
+// - $position: Control position property of element
+//
+@mixin biggen-fill-container(
+  $position: fixed
+){
+
+  position: $position;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// Clear Fix
+//
+// - Just so we don't need Compass
+//
+@mixin biggen-clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after { clear: both; }
+}
