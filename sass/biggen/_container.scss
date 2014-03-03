@@ -1,10 +1,10 @@
 // Create a container for Biggen content
 @mixin biggen-container(
-  $bg1: $container-bg1,
-  $bg2: false,
-  $margin-top: $container-margin-top,
-  $padding: $container-padding,
-  $width: $container-width
+  $bg1: $biggen-container-bg1,
+  $bg2: $biggen-container-bg2,
+  $margin-top: $biggen-container-margin-top,
+  $padding: $biggen-container-padding,
+  $width: $biggen-container-width
 ){
 
   position: relative;

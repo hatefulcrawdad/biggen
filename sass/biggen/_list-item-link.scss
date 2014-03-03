@@ -1,11 +1,11 @@
 // Style Biggen list item links
 @mixin biggen-list-item-link(
-  $font-size: 12px,
-  $link-color: #fff,
-  $link-hover-color: darken(lightblue, 40%),
-  $text-decoration: none,
-  $text-transform: uppercase,
-  $text-padding: 20px
+  $font-size,
+  $link-color,
+  $link-hover-color,
+  $text-decoration,
+  $text-transform,
+  $text-padding
 ){
 
   color: $link-color;

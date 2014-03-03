@@ -3,8 +3,8 @@
 //  - Single background color
 //  - Gradient background color
 @mixin biggen-overlay(
-  $bg1: $overlay-bg1,
-  $bg2: $overlay-bg2
+  $bg1: $biggen-overlay-bg1,
+  $bg2: $biggen-overlay-bg2
 ){
 
   display: none;

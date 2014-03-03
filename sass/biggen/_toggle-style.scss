@@ -2,11 +2,13 @@
 //  - Style the word and unicode icon
 //  - Move unicode icon slightly for alignment
 @mixin biggen-toggle-style(
-  $font-size,
-  $font-color,
-  $font-weight: normal,
-  $font-style: null,
-  $text-transform: null
+  $font-size: $biggen-toggle-font-size,
+  $font-color: $biggen-toggle-font-color,
+  $font-weight: $biggen-toggle-font-weight,
+  $font-style: $biggen-toggle-font-style,
+  $text-transform: $biggen-toggle-text-transform,
+  $toggle-name: $biggen-toggle-name,
+  $overlay-class: $biggen-overlay-class
 ){
 
   color: $font-color;
@@ -17,4 +19,5 @@
   text-transform: $text-transform;
 
   @include biggen-selected { color: rgba($font-color, .7); }
+  @include biggen-toggle-action($toggle-name, $overlay-class);
 }

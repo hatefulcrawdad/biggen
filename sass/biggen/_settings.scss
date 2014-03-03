@@ -1,10 +1,29 @@
-// Biggen overlay background settings
-$overlay-bg1: darken(lightblue, 25%) !default;
-$overlay-bg2: darken(lightblue, 35%) !default;
+// Biggen menu toggle settings
 
-// Biggen container settings
-$container-bg1: darken(lightblue, 15%) !default;
-$container-bg2: darken(lightblue, 10%) !default;
-$container-margin-top: 10% !default;
-$container-padding: 40px !default;
-$container-width: 50% !default;
+$biggen-toggle-font-size: 16px !default;
+$biggen-toggle-font-color: black !default;
+$biggen-toggle-font-weight: normal !default;
+$biggen-toggle-font-style: null !default;
+$biggen-toggle-text-transform: null !default;
+$biggen-toggle-name: "biggen-toggle" !default;
+$biggen-overlay-class: "biggen-overlay" !default;
+
+// Biggen overlay and container settings
+
+$biggen-overlay-bg1: darken(lightblue, 25%) !default;
+$biggen-overlay-bg2: false !default;
+$biggen-container-bg1: darken(lightblue, 15%) !default;
+$biggen-container-bg2: false !default;
+$biggen-container-margin-top: 10% !default;
+$biggen-container-padding: 40px !default;
+$biggen-container-width: 50% !default;
+
+// Biggen list settings
+
+$biggen-list-count: 1 !default;
+$biggen-list-font-size: 12px !default;
+$biggen-list-link-color: #fff !default;
+$biggen-list-link-hover-color: darken(lightblue, 40%) !default;
+$biggen-list-text-decoration: none !default;
+$biggen-list-text-transform: uppercase !default;
+$biggen-list-text-padding: 20px !default;

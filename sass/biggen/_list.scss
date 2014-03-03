@@ -1,6 +1,12 @@
 // Create Biggen list container
 @mixin biggen-list(
-  $list-count
+  $list-count: $biggen-list-count,
+  $font-size: $biggen-list-font-size,
+  $link-color: $biggen-list-link-color,
+  $link-hover-color: $biggen-list-link-hover-color,
+  $text-decoration: $biggen-list-text-decoration,
+  $text-transform: $biggen-list-text-transform,
+  $text-padding: $biggen-list-text-padding
 ){
 
   list-style: none;
@@ -16,4 +22,7 @@
     float: left;
     width: 33.3%;
   }
+
+  li { margin: 0; }
+  a { @include biggen-list-item-link($font-size,$link-color,$link-hover-color,$text-decoration,$text-transform,$text-padding); }
 }

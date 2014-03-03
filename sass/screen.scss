@@ -5,14 +5,7 @@
 //
 
 // Default Styles
-.biggen-overlay { @include biggen-overlay(); }
-.biggen-container { @include biggen-container(); }
+.biggen-toggle { @include biggen-toggle-style; }
+.biggen-overlay { @include biggen-overlay; }
+.biggen-container { @include biggen-container; }
 .biggen-list { @include biggen-list(2); }
-.biggen-list-item { @include biggen-list-item(); }
-.biggen-list-item-link { @include biggen-list-item-link(); }
-
-// Toggle biggen with a checkbox
-.biggen-toggle {
-  @include biggen-toggle-action();
-  @include biggen-toggle-style(16px, black);
-}
