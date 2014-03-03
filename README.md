@@ -1,7 +1,7 @@
 ##Biggen: Sass modal menus##
 Create beautiful full-screen modal menus with the ease and customization of Sass.
 
-#### Markup Structure ####
+### Markup Structure ###
 To make your first Biggen menu, follow the markup below. There's only a few required elements. _Note: Any class name surrounded by [brackets] means use whatever class you want, just apply the appropriate mixin._
 
 ```html
@@ -27,7 +27,7 @@ Biggen relies on the handy [:checked trick](http://css-tricks.com/almanac/select
 3. Add your `<div class="[biggen-overlay]">...</div>` and its contents right after that checkbox, the order is important!
 
 
-#### Built With Mixins ####
+### Built With Mixins ###
 After defining your markup, we'll get styles in place. Biggen relies on Sass to compile, but feel free to still use Compass, Bourbon or any other library without any problems.
 
 The basic Sass needed to get up and running with default styles, just match your class names:
@@ -39,7 +39,7 @@ The basic Sass needed to get up and running with default styles, just match your
 .[biggen-list] { @include biggen-list; }
 ```
 
-##### Biggen Toggle Mixin #####
+#### Biggen Toggle Mixin ####
 A Biggen menu must contain a toggle, this is what enables it to open. You can run with the defaults provided or pass in a few arguments to make things your own.
 
 ```scss
