@@ -12,10 +12,10 @@ _Note: Any class name surrounded by [brackets] means use whatever class you want
 <input type="checkbox" id="[biggen-toggle]">
 
 <!-- Biggen Menu -->
-<div class="biggen-overlay">
-  <div class="biggen-container">
-    <ul class="biggen-list">
-      <li><a class="biggen-list-item-link" href="#">Menu Item 1</a></li>
+<div class="[biggen-overlay]">
+  <div class="[biggen-container]">
+    <ul class="[biggen-list]">
+      <li><a href="#">Menu Item 1</a></li>
       ...
     </ul>
   </div>
