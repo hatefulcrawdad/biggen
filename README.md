@@ -26,6 +26,7 @@ Biggen relies on the handy [:checked trick](http://css-tricks.com/almanac/select
 2. Add an `<input type="checkbox" id="[biggen-toggle]">` right below that, with nothing in between. Make sure the id matches the class you used for the label
 3. Add your `<div class="[biggen-overlay]">...</div>` and its contents right after that checkbox, the order is important!
 
+___
 
 ### Built With Mixins ###
 After defining your markup, we'll get styles in place. Biggen relies on Sass to compile, but feel free to still use Compass, Bourbon or any other library without any problems.
